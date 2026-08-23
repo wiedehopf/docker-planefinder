@@ -13,7 +13,7 @@ repos:
 
   # lint the dockerfiles
   - repo: https://github.com/hadolint/hadolint
-    rev: 4e697ba704fd23b2409b947a319c19c3ee54d24f  # frozen: v2.14.0
+    rev: 2eece55955ced00200be9729e9728cb7dacca505  # frozen: v2.15.1
     hooks:
       - id: hadolint
 
@@ -28,7 +28,7 @@ repos:
         exclude: ^(Dockerfile*)
 
   - repo: https://github.com/codespell-project/codespell.git
-    rev: "63c8f8312b7559622c0d82815639671ae42132ac"  # frozen: v2.4.1
+    rev: "57b21406f092110c18776e39b0bda50d37c945c8"  # frozen: v2.4.3
     hooks:
       - id: codespell
         types: [text]
@@ -36,12 +36,12 @@ repos:
         exclude: ^(Dockerfile*)
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: 745eface02aef23e168a8afb6b5737818efbea95  # frozen: v0.11.0.1
+    rev: a6564f5d57444e123433a5c9af733e3975c77229  # frozen: v0.11.0.1-1
     hooks:
       - id: shellcheck
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 83b816d020105076daac266dbf6bfed199a2da93  # frozen: 0.34.1
+    rev: c4654a7e007c9619a5eb63c39a456572a0fa1851  # frozen: 0.38.0
     hooks:
       - id: check-github-actions
       - id: check-github-workflows
@@ -54,7 +54,7 @@ repos:
 
     # lint python formatting
   - repo: https://github.com/psf/black
-    rev: af0ba72a73598c76189d6dd1b21d8532255d5942  # frozen: 25.9.0
+    rev: 87928e6d6761a4a6d22250e1fee5601b3998086e  # frozen: 26.5.1
     hooks:
       - id: black
 
